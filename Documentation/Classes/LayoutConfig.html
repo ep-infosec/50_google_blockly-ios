@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html devsite>
+  <head>
+    <title>Blockly Framework Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <meta charset='utf-8'>
+    <meta name="project_path" value="/blockly/_project.yaml"/><meta name="book_path" value="/blockly/_book.yaml"/>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LayoutConfig</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">LayoutConfig</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>UI configuration for all layout elements.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <a href="#/Static%20Properties">
+                  <h2 class="section-name">Static Properties</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)BlockBumpDistance"></a>
+                    <a name="//apple_ref/swift/Variable/BlockBumpDistance" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)BlockBumpDistance">BlockBumpDistance</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] The distance to bump blocks away from each other</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">BlockBumpDistance</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)BlockSnapDistance"></a>
+                    <a name="//apple_ref/swift/Variable/BlockSnapDistance" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)BlockSnapDistance">BlockSnapDistance</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] The maximum distance allowed for blocks to <q>snap</q> toward each other at the end of
+drags, if they have compatible connections near each other.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">BlockSnapDistance</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)InlineXPadding"></a>
+                    <a name="//apple_ref/swift/Variable/InlineXPadding" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)InlineXPadding">InlineXPadding</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Horizontal padding around inline elements (such as fields or inputs)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">InlineXPadding</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)InlineYPadding"></a>
+                    <a name="//apple_ref/swift/Variable/InlineYPadding" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)InlineYPadding">InlineYPadding</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Vertical padding around inline elements (such as fields or inputs)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">InlineYPadding</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)WorkspaceFlowXSeparatorSpace"></a>
+                    <a name="//apple_ref/swift/Variable/WorkspaceFlowXSeparatorSpace" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)WorkspaceFlowXSeparatorSpace">WorkspaceFlowXSeparatorSpace</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Horizontal space between blocks for <code><a href="../Classes/WorkspaceFlowLayout.html">WorkspaceFlowLayout</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">WorkspaceFlowXSeparatorSpace</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)WorkspaceFlowYSeparatorSpace"></a>
+                    <a name="//apple_ref/swift/Variable/WorkspaceFlowYSeparatorSpace" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)WorkspaceFlowYSeparatorSpace">WorkspaceFlowYSeparatorSpace</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Vertical space between blocks for for <code><a href="../Classes/WorkspaceFlowLayout.html">WorkspaceFlowLayout</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">WorkspaceFlowYSeparatorSpace</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldMinimumHeight"></a>
+                    <a name="//apple_ref/swift/Variable/FieldMinimumHeight" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldMinimumHeight">FieldMinimumHeight</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Minimum height of field rows</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldMinimumHeight</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCornerRadius"></a>
+                    <a name="//apple_ref/swift/Variable/FieldCornerRadius" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCornerRadius">FieldCornerRadius</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] If necessary, the rounded corner radius of a field</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldCornerRadius</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldLineWidth"></a>
+                    <a name="//apple_ref/swift/Variable/FieldLineWidth" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldLineWidth">FieldLineWidth</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] If necessary, the line stroke width of a field</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldLineWidth</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldAnglePickerOptions"></a>
+                    <a name="//apple_ref/swift/Variable/FieldAnglePickerOptions" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldAnglePickerOptions">FieldAnglePickerOptions</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UntypedValue</code>: <code><a href="../Classes/AnglePicker/Options.html">AnglePicker.Options</a></code>] The options to use whenever an angle picker is
+displayed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldAnglePickerOptions</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonBorderWidth"></a>
+                    <a name="//apple_ref/swift/Variable/FieldColorButtonBorderWidth" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonBorderWidth">FieldColorButtonBorderWidth</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] The border width to use when rendering the <code><a href="../Classes/FieldColor.html">FieldColor</a></code> button</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldColorButtonBorderWidth</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonBorderColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldColorButtonBorderColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonBorderColor">FieldColorButtonBorderColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The border color to use when rendering the <code><a href="../Classes/FieldColor.html">FieldColor</a></code> button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldColorButtonBorderColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonSize"></a>
+                    <a name="//apple_ref/swift/Variable/FieldColorButtonSize" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldColorButtonSize">FieldColorButtonSize</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code>] The button size to use when rendering a <code><a href="../Classes/FieldColor.html">FieldColor</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldColorButtonSize</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCheckboxSwitchOnTintColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldCheckboxSwitchOnTintColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCheckboxSwitchOnTintColor">FieldCheckboxSwitchOnTintColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The color to use for the <code><a href="../Classes/FieldCheckboxView.html">FieldCheckboxView</a></code> switch&rsquo;s <q>onTintColor</q>. A value of
+<code>nil</code> means that the system default should be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldCheckboxSwitchOnTintColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCheckboxSwitchTintColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldCheckboxSwitchTintColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldCheckboxSwitchTintColor">FieldCheckboxSwitchTintColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The color to use for the <code><a href="../Classes/FieldCheckboxView.html">FieldCheckboxView</a></code> switch&rsquo;s <q>tintColor</q>. A value of
+<code>nil</code> means that the system default should be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldCheckboxSwitchTintColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownXSpacing"></a>
+                    <a name="//apple_ref/swift/Variable/FieldDropdownXSpacing" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownXSpacing">FieldDropdownXSpacing</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Horizontal spacing inside a dropdown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldDropdownXSpacing</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownYSpacing"></a>
+                    <a name="//apple_ref/swift/Variable/FieldDropdownYSpacing" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownYSpacing">FieldDropdownYSpacing</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] Vertical spacing inside a dropdown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldDropdownYSpacing</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownBackgroundColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldDropdownBackgroundColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownBackgroundColor">FieldDropdownBackgroundColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The color to use for the dropdown background.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldDropdownBackgroundColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownBorderColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldDropdownBorderColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldDropdownBorderColor">FieldDropdownBorderColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The color to use for the dropdown border.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldDropdownBorderColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldLabelTextColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldLabelTextColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldLabelTextColor">FieldLabelTextColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The default color for text in field labels.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldLabelTextColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldEditableTextColor"></a>
+                    <a name="//apple_ref/swift/Variable/FieldEditableTextColor" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldEditableTextColor">FieldEditableTextColor</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UIColor</code>] The default color for editable text in fields.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldEditableTextColor</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldNumberPadOptions"></a>
+                    <a name="//apple_ref/swift/Variable/FieldNumberPadOptions" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldNumberPadOptions">FieldNumberPadOptions</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>UntypedValue</code>: <code><a href="../Classes/NumberPad/Options.html">NumberPad.Options</a></code>] The options to use whenever a number pad is
+displayed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldNumberPadOptions</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldInsetPadding"></a>
+                    <a name="//apple_ref/swift/Variable/FieldTextFieldInsetPadding" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldInsetPadding">FieldTextFieldInsetPadding</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>EdgeInsets</code>] For fields that use an <code><a href="../Classes/InsetTextField.html">InsetTextField</a></code>, this is the <code>insetPadding</code> that
+should be used for each one</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldTextFieldInsetPadding</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldMinimumWidth"></a>
+                    <a name="//apple_ref/swift/Variable/FieldTextFieldMinimumWidth" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldMinimumWidth">FieldTextFieldMinimumWidth</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] For fields that use a <code>UITextField</code>, this is the minimum width that should be
+used for each one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldTextFieldMinimumWidth</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldMaximumWidth"></a>
+                    <a name="//apple_ref/swift/Variable/FieldTextFieldMaximumWidth" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)FieldTextFieldMaximumWidth">FieldTextFieldMaximumWidth</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code>] For fields that use a <code>UITextField</code>, this is the maximum width that should be
+used for each one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">FieldTextFieldMaximumWidth</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)GlobalFont"></a>
+                    <a name="//apple_ref/swift/Variable/GlobalFont" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)GlobalFont">GlobalFont</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>Font</code>] The default font to use for generic text inside Blockly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">GlobalFont</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)MutatorButtonSize"></a>
+                    <a name="//apple_ref/swift/Variable/MutatorButtonSize" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)MutatorButtonSize">MutatorButtonSize</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code>] For mutators, this is the size of the default <q>settings</q> button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">MutatorButtonSize</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverLabelFont"></a>
+                    <a name="//apple_ref/swift/Variable/PopoverLabelFont" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverLabelFont">PopoverLabelFont</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>Font</code>] The font to use for label text inside popovers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PopoverLabelFont</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverTitleFont"></a>
+                    <a name="//apple_ref/swift/Variable/PopoverTitleFont" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverTitleFont">PopoverTitleFont</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>Font</code>] The font to use for title text inside popovers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PopoverTitleFont</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverSubtitleFont"></a>
+                    <a name="//apple_ref/swift/Variable/PopoverSubtitleFont" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)PopoverSubtitleFont">PopoverSubtitleFont</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>Font</code>] The font to use for subtitle text inside popovers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PopoverSubtitleFont</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)ViewAnimationDuration"></a>
+                    <a name="//apple_ref/swift/Variable/ViewAnimationDuration" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)ViewAnimationDuration">ViewAnimationDuration</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>Double</code>] The animation duration to use when running animatable code inside a <code><a href="../Classes/LayoutView.html">LayoutView</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ViewAnimationDuration</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)VariableBlocks"></a>
+                    <a name="//apple_ref/swift/Variable/VariableBlocks" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)VariableBlocks">VariableBlocks</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>[String]</code>] The variable blocks to be created in the toolbox when a variable is created.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">VariableBlocks</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)UniqueVariableBlocks"></a>
+                    <a name="//apple_ref/swift/Variable/UniqueVariableBlocks" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cpy)UniqueVariableBlocks">UniqueVariableBlocks</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>[<code>[String]</code>] The variable blocks to be created the first time a variable is created.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">UniqueVariableBlocks</span> <span class="o">=</span> <span class="kt">LayoutConfig</span><span class="o">.</span><span class="nf">newPropertyKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Closures"></a>
+                <a name="//apple_ref/swift/Section/Closures" class="dashAnchor"></a>
+                <a href="#/Closures">
+                  <h2 class="section-name">Closures</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC11FontCreatora"></a>
+                    <a name="//apple_ref/swift/Alias/FontCreator" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC11FontCreatora">FontCreator</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A closure for creating a <code>UIFont</code> from a given scale.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">FontCreator</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Aliases"></a>
+                <a name="//apple_ref/swift/Section/Aliases" class="dashAnchor"></a>
+                <a href="#/Aliases">
+                  <h2 class="section-name">Aliases</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC11PropertyKeya"></a>
+                    <a name="//apple_ref/swift/Alias/PropertyKey" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type alias defining the property key.
+To create a new one, call <code><a href="../Classes/LayoutConfig.html#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cm)newPropertyKey">LayoutConfig.newPropertyKey()</a></code>, rather than instantiating
+the underlying type directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">PropertyKey</span> <span class="o">=</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC4Unita"></a>
+                    <a name="//apple_ref/swift/Alias/Unit" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC4Unita">Unit</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct for representing a unit value in both the Workspace coordinate system and UIView
+coordinate system.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="kt">LayoutConfigUnit</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC4Sizea"></a>
+                    <a name="//apple_ref/swift/Alias/Size" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC4Sizea">Size</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct for representing a Size value (i.e. width/height) in both the Workspace coordinate
+system and UIView coordinate system.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Size</span> <span class="o">=</span> <span class="kt">LayoutConfigSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa"></a>
+                    <a name="//apple_ref/swift/Alias/ScaledEdgeInsets" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct for representing an <code>EdgeInsets</code> value in both the Workspace coordinate system and
+UIView coordinate system.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ScaledEdgeInsets</span> <span class="o">=</span> <span class="kt">LayoutConfigEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h2 class="section-name">Properties</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)bools"></a>
+                    <a name="//apple_ref/swift/Property/bools" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)bools">bools</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>Bool</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">bools</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">Bool</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)colors"></a>
+                    <a name="//apple_ref/swift/Property/colors" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)colors">colors</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>UIColor</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">colors</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">UIColor</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)doubles"></a>
+                    <a name="//apple_ref/swift/Property/doubles" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)doubles">doubles</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>Double</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">doubles</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">Double</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC10edgeInsetss10DictionaryVySiSC0bc4EdgeE0VGv"></a>
+                    <a name="//apple_ref/swift/Property/edgeInsets" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC10edgeInsetss10DictionaryVySiSC0bc4EdgeE0VGv">edgeInsets</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">edgeInsets</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)floats"></a>
+                    <a name="//apple_ref/swift/Property/floats" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)floats">floats</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>CGFloat</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">floats</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">CGFloat</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC5sizess10DictionaryVySiSC0bC4SizeVGv"></a>
+                    <a name="//apple_ref/swift/Property/sizes" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC5sizess10DictionaryVySiSC0bC4SizeVGv">sizes</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">sizes</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly12LayoutConfigC5unitss10DictionaryVySiSC0bC4UnitVGv"></a>
+                    <a name="//apple_ref/swift/Property/units" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly12LayoutConfigC5unitss10DictionaryVySiSC0bC4UnitVGv">units</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">units</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)stringArrays"></a>
+                    <a name="//apple_ref/swift/Property/stringArrays" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)stringArrays">stringArrays</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>[String]</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">stringArrays</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)strings"></a>
+                    <a name="//apple_ref/swift/Property/strings" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)strings">strings</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>String</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">strings</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)untypedValues"></a>
+                    <a name="//apple_ref/swift/Property/untypedValues" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(py)untypedValues">untypedValues</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary mapping property keys to <code>Any</code> values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">untypedValues</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Create%20Property%20Keys"></a>
+                <a name="//apple_ref/swift/Section/Create Property Keys" class="dashAnchor"></a>
+                <a href="#/Create%20Property%20Keys">
+                  <h2 class="section-name">Create Property Keys</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(cm)newPropertyKey"></a>
+                    <a name="//apple_ref/swift/Method/newPropertyKey()" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(cm)newPropertyKey">newPropertyKey()</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">newPropertyKey</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configure%20Values"></a>
+                <a name="//apple_ref/swift/Section/Configure Values" class="dashAnchor"></a>
+                <a href="#/Configure%20Values">
+                  <h2 class="section-name">Configure Values</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setBool:for:"></a>
+                    <a name="//apple_ref/swift/Method/setBool(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setBool:for:">setBool(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>Bool</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setBool</span><span class="p">(</span><span class="n">_</span> <span class="nv">boolValue</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Bool</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)boolFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/bool(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)boolFor:defaultValue:">bool(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>Bool</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">bool</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setDouble:for:"></a>
+                    <a name="//apple_ref/swift/Method/setDouble(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setDouble:for:">setDouble(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>Double</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDouble</span><span class="p">(</span><span class="n">_</span> <span class="nv">doubleValue</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Double</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)doubleFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/double(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)doubleFor:defaultValue:">double(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>Double</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">double</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setColor:for:"></a>
+                    <a name="//apple_ref/swift/Method/setColor(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setColor:for:">setColor(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>UIColor</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>color</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)colorFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/color(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)colorFor:defaultValue:">color(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>UIColor</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setScaledEdgeInsets:for:"></a>
+                    <a name="//apple_ref/swift/Method/setScaledEdgeInsets(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setScaledEdgeInsets:for:">setScaledEdgeInsets(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setScaledEdgeInsets</span><span class="p">(</span><span class="n">_</span> <span class="nv">edgeInsets</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC10edgeInsetss10DictionaryVySiSC0bc4EdgeE0VGv">edgeInsets</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)scaledEdgeInsetsFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/scaledEdgeInsets(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)scaledEdgeInsetsFor:defaultValue:">scaledEdgeInsets(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">scaledEdgeInsets</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span><span class="o">.</span><span class="n">zero</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewEdgeInsetsFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/viewEdgeInsets(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewEdgeInsetsFor:defaultValue:">viewEdgeInsets(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>viewEdgeInsets</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value that is mapped to a specific
+<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">viewEdgeInsets</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span><span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>viewEdgeInsets</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceEdgeInsetsFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/workspaceEdgeInsets(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceEdgeInsetsFor:defaultValue:">workspaceEdgeInsets(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>workspaceEdgeInsets</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value that is mapped to a specific
+<code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">workspaceEdgeInsets</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></span><span class="o">.</span><span class="n">zero</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>workspaceEdgeInsets</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC16ScaledEdgeInsetsa">ScaledEdgeInsets</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setFloat:for:"></a>
+                    <a name="//apple_ref/swift/Method/setFloat(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setFloat:for:">setFloat(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>CGFloat</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFloat</span><span class="p">(</span><span class="n">_</span> <span class="nv">floatValue</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>CGFloat</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)floatFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/float(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)floatFor:defaultValue:">float(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>CGFloat</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">float</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setFontCreator:for:"></a>
+                    <a name="//apple_ref/swift/Method/setFontCreator(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setFontCreator:for:">setFontCreator(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a closure for creating a <code>UIFont</code>, to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFontCreator</span><span class="p">(</span><span class="n">_</span> <span class="nv">fontCreator</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11FontCreatora">FontCreator</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)fontCreatorFor:"></a>
+                    <a name="//apple_ref/swift/Method/fontCreator(for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)fontCreatorFor:">fontCreator(for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the closure for creating a <code>UIFont</code> that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fontCreator</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11FontCreatora">FontCreator</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>If the <code>key</code> was found, its associated <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11FontCreatora">FontCreator</a></code> value. Otherwise, <code>nil</code> is
+returned.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)fontFor:"></a>
+                    <a name="//apple_ref/swift/Method/font(for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)fontFor:">font(for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Based on the closure for creating a <code>UIFont</code> associated to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>, returns
+a scaled <code>UIFont</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">font</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The scaled <code>UIFont</code> using the closure associated with the <code>key</code>, or a default <code>UIFont</code>
+if the key could not be located.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)popoverFontFor:"></a>
+                    <a name="//apple_ref/swift/Method/popoverFont(for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)popoverFontFor:">popoverFont(for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Based on the closure for creating a <code>UIFont</code> associated to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>, returns
+a scaled <code>UIFont</code> for use inside a popover.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">popoverFont</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIFont</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The scaled <code>UIFont</code> using the closure associated with the <code>key</code>, or a default <code>UIFont</code>
+if the key could not be located.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setSize:for:"></a>
+                    <a name="//apple_ref/swift/Method/setSize(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setSize:for:">setSize(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">size</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>size</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)sizeFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/size(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)sizeFor:defaultValue:">size(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">size</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewSizeFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/viewSize(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewSizeFor:defaultValue:">viewSize(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>viewSize</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">viewSize</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>viewSize</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceSizeFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/workspaceSize(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceSizeFor:defaultValue:">workspaceSize(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>workspaceSize</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">workspaceSize</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="o">-&gt;</span> <span class="kt">WorkspaceSize</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>workspaceSize</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Sizea">Size</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setUnit:for:"></a>
+                    <a name="//apple_ref/swift/Method/setUnit(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setUnit:for:">setUnit(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUnit</span><span class="p">(</span><span class="n">_</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>unit</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)unitFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/unit(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)unitFor:defaultValue:">unit(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unit</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewUnitFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/viewUnit(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)viewUnitFor:defaultValue:">viewUnit(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>viewUnit</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">viewUnit</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>viewUnit</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceUnitFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/workspaceUnit(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)workspaceUnitFor:defaultValue:">workspaceUnit(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>workspaceUnit</code> of the <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">workspaceUnit</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span> <span class="o">=</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>workspaceUnit</code> of the mapped <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC4Unita">Unit</a></code> value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setStringArray:for:"></a>
+                    <a name="//apple_ref/swift/Method/setStringArray(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setStringArray:for:">setStringArray(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>[String]</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setStringArray</span><span class="p">(</span><span class="n">_</span> <span class="nv">stringArrayValue</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>[String]</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)stringArrayFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/stringArray(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)stringArrayFor:defaultValue:">stringArray(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>[String]</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stringArray</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setString:for:"></a>
+                    <a name="//apple_ref/swift/Method/setString(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setString:for:">setString(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps a <code>String</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setString</span><span class="p">(</span><span class="n">_</span> <span class="nv">stringValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)stringFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/string(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)stringFor:defaultValue:">string(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>String</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setUntypedValue:for:"></a>
+                    <a name="//apple_ref/swift/Method/setUntypedValue(_:for:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)setUntypedValue:for:">setUntypedValue(_:for:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maps an <code>Any?</code> value to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Retrieving untyped values is slow and should be avoided whenever possible. It should
+only be done for code that is not performance-reliant.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUntypedValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">untypedValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Any?</code> value that was set.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)untypedValueFor:defaultValue:"></a>
+                    <a name="//apple_ref/swift/Method/untypedValue(for:defaultValue:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)untypedValueFor:defaultValue:">untypedValue(for:defaultValue:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the <code>Any?</code> value that is mapped to a specific <code><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untypedValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutConfig.html#/s:7Blockly12LayoutConfigC11PropertyKeya">PropertyKey</a></span><span class="p">,</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>key</code>&rsquo;s value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Update%20Values"></a>
+                <a name="//apple_ref/swift/Section/Update Values" class="dashAnchor"></a>
+                <a href="#/Update%20Values">
+                  <h2 class="section-name">Update Values</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)updateViewValuesFromEngine:"></a>
+                    <a name="//apple_ref/swift/Method/updateViewValues(fromEngine:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYLayoutConfig(im)updateViewValuesFromEngine:">updateViewValues(fromEngine:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the UIView coordinate system values for all config values that have been stored
+in this instance, by using a given <code><a href="../Classes/LayoutEngine.html">LayoutEngine</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">updateViewValues</span><span class="p">(</span><span class="n">fromEngine</span> <span class="nv">engine</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutEngine.html">LayoutEngine</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>          </section>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
+toc:
+- heading: Blockly
+
+- title: iOS
+  path: /blockly/reference/ios/../iOS
+  section:
+    - title: AnglePicker
+      path: /blockly/reference/ios/../Classes/AnglePicker.html
+    - title: – Options
+      path: /blockly/reference/ios/../Classes/AnglePicker/Options.html
+    - title: AnglePickerViewController
+      path: /blockly/reference/ios/../Classes/AnglePickerViewController.html
+    - title: AnglePickerViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/AnglePickerViewControllerDelegate.html
+    - title: Array
+      path: /blockly/reference/ios/../Extensions/Array.html
+    - title: BezierPathLayer
+      path: /blockly/reference/ios/../Classes/BezierPathLayer.html
+    - title: Block
+      path: /blockly/reference/ios/../Classes/Block.html
+    - title: – Style
+      path: /blockly/reference/ios/../Classes/Block/Style.html
+    - title: BlockBuilder
+      path: /blockly/reference/ios/../Classes/BlockBuilder.html
+    - title: BlockBumper
+      path: /blockly/reference/ios/../Classes/BlockBumper.html
+    - title: BlockExtension
+      path: /blockly/reference/ios/../Protocols/BlockExtension.html
+    - title: BlockExtensionClosure
+      path: /blockly/reference/ios/../Classes/BlockExtensionClosure.html
+    - title: BlocklyEvent
+      path: /blockly/reference/ios/../Classes/BlocklyEvent.html
+    - title: – Change
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Change.html
+    - title: – Delete
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Delete.html
+    - title: – UI
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/UI.html
+    - title: – Create
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Create.html
+    - title: – Move
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Move.html
+    - title: BlocklyEventFactory
+      path: /blockly/reference/ios/../Classes/BlocklyEventFactory.html
+    - title: BlockFactory
+      path: /blockly/reference/ios/../Classes/BlockFactory.html
+    - title: BlockGroupLayout
+      path: /blockly/reference/ios/../Classes/BlockGroupLayout.html
+    - title: BlockGroupView
+      path: /blockly/reference/ios/../Classes/BlockGroupView.html
+    - title: BlockJSONFile
+      path: /blockly/reference/ios/../Extensions/BlockJSONFile.html
+    - title: BlockLayout
+      path: /blockly/reference/ios/../Classes/BlockLayout.html
+    - title: BlockListener
+      path: /blockly/reference/ios/../Protocols/BlockListener.html
+    - title: BlocklyError
+      path: /blockly/reference/ios/../Classes/BlocklyError.html
+    - title: – Code
+      path: /blockly/reference/ios/../Classes/BlocklyError.html#/s:7Blockly0A5ErrorC4CodeO
+    - title: BlocklyPanGestureRecognizer
+      path: /blockly/reference/ios/../Classes/BlocklyPanGestureRecognizer.html
+    - title: – TouchState
+      path: /blockly/reference/ios/../Classes/BlocklyPanGestureRecognizer.html#/s:7Blockly0A20PanGestureRecognizerC10TouchStateO
+    - title: BlocklyPanGestureRecognizerDelegate
+      path: /blockly/reference/ios/../Protocols/BlocklyPanGestureRecognizerDelegate.html
+    - title: BlockView
+      path: /blockly/reference/ios/../Classes/BlockView.html
+    - title: BundledFile
+      path: /blockly/reference/ios/../iOS.html#/s:7Blockly11BundledFilea
+    - title: CodeGenerator
+      path: /blockly/reference/ios/../Classes/CodeGenerator.html
+    - title: – State
+      path: /blockly/reference/ios/../Classes/CodeGenerator.html#/s:7Blockly13CodeGeneratorC5StateO
+    - title: CodeGeneratorService
+      path: /blockly/reference/ios/../Classes/CodeGeneratorService.html
+    - title: CodeGeneratorServiceRequestBuilder
+      path: /blockly/reference/ios/../Classes/CodeGeneratorServiceRequestBuilder.html
+    - title: ColorHelper
+      path: /blockly/reference/ios/../Classes/ColorHelper.html
+    - title: ColorPalette
+      path: /blockly/reference/ios/../Classes/ColorPalette.html
+    - title: Connection
+      path: /blockly/reference/ios/../Classes/Connection.html
+    - title: – ConnectionType
+      path: /blockly/reference/ios/../Classes/Connection.html#/s:7Blockly10ConnectionC0B4TypeO
+    - title: – CheckResult
+      path: /blockly/reference/ios/../Classes/Connection/CheckResult.html
+    - title: ConnectionManager
+      path: /blockly/reference/ios/../Classes/ConnectionManager.html
+    - title: – Group
+      path: /blockly/reference/ios/../Classes/ConnectionManager/Group.html
+    - title: ConnectionPositionDelegate
+      path: /blockly/reference/ios/../Protocols/ConnectionPositionDelegate.html
+    - title: ConnectionValidator
+      path: /blockly/reference/ios/../Protocols/ConnectionValidator.html
+    - title: DefaultBlockGroupLayout
+      path: /blockly/reference/ios/../Classes/DefaultBlockGroupLayout.html
+    - title: DefaultBlockLayout
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout.html
+    - title: – Background
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/Background.html
+    - title: – BackgroundRow
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/BackgroundRow.html
+    - title: – InlineConnector
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/InlineConnector.html
+    - title: DefaultBlockView
+      path: /blockly/reference/ios/../Classes/DefaultBlockView.html
+    - title: DefaultConnectionValidator
+      path: /blockly/reference/ios/../Classes/DefaultConnectionValidator.html
+    - title: DefaultInputLayout
+      path: /blockly/reference/ios/../Classes/DefaultInputLayout.html
+    - title: DefaultLayoutConfig
+      path: /blockly/reference/ios/../Classes/DefaultLayoutConfig.html
+    - title: DefaultLayoutEngine
+      path: /blockly/reference/ios/../Classes/DefaultLayoutEngine.html
+    - title: Dictionary
+      path: /blockly/reference/ios/../Extensions/Dictionary.html
+    - title: Dragger
+      path: /blockly/reference/ios/../Classes/Dragger.html
+    - title: DropdownOptionsViewController
+      path: /blockly/reference/ios/../Classes/DropdownOptionsViewController.html
+    - title: DropdownOptionsViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/DropdownOptionsViewControllerDelegate.html
+    - title: DropdownView
+      path: /blockly/reference/ios/../Classes/DropdownView.html
+    - title: DropdownViewDelegate
+      path: /blockly/reference/ios/../Protocols/DropdownViewDelegate.html
+    - title: EdgeInsets
+      path: /blockly/reference/ios/../Extensions/EdgeInsets.html
+    - title: EventManager
+      path: /blockly/reference/ios/../Classes/EventManager.html
+    - title: EventManagerListener
+      path: /blockly/reference/ios/../Protocols/EventManagerListener.html
+    - title: Field
+      path: /blockly/reference/ios/../Classes/Field.html
+    - title: – JSONRegistry
+      path: /blockly/reference/ios/../Classes/Field/JSONRegistry.html
+    - title: FieldAngle
+      path: /blockly/reference/ios/../Classes/FieldAngle.html
+    - title: FieldAngleLayout
+      path: /blockly/reference/ios/../Classes/FieldAngleLayout.html
+    - title: FieldAngleView
+      path: /blockly/reference/ios/../Classes/FieldAngleView.html
+    - title: FieldCheckbox
+      path: /blockly/reference/ios/../Classes/FieldCheckbox.html
+    - title: FieldCheckboxLayout
+      path: /blockly/reference/ios/../Classes/FieldCheckboxLayout.html
+    - title: FieldCheckboxView
+      path: /blockly/reference/ios/../Classes/FieldCheckboxView.html
+    - title: FieldColor
+      path: /blockly/reference/ios/../Classes/FieldColor.html
+    - title: FieldColorLayout
+      path: /blockly/reference/ios/../Classes/FieldColorLayout.html
+    - title: FieldColorPickerViewController
+      path: /blockly/reference/ios/../Classes/FieldColorPickerViewController.html
+    - title: FieldColorPickerViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/FieldColorPickerViewControllerDelegate.html
+    - title: FieldColorView
+      path: /blockly/reference/ios/../Classes/FieldColorView.html
+    - title: FieldDate
+      path: /blockly/reference/ios/../Classes/FieldDate.html
+    - title: FieldDateLayout
+      path: /blockly/reference/ios/../Classes/FieldDateLayout.html
+    - title: FieldDateView
+      path: /blockly/reference/ios/../Classes/FieldDateView.html
+    - title: FieldDropdown
+      path: /blockly/reference/ios/../Classes/FieldDropdown.html
+    - title: FieldDropdownLayout
+      path: /blockly/reference/ios/../Classes/FieldDropdownLayout.html
+    - title: FieldDropdownView
+      path: /blockly/reference/ios/../Classes/FieldDropdownView.html
+    - title: FieldImage
+      path: /blockly/reference/ios/../Classes/FieldImage.html
+    - title: FieldImageLayout
+      path: /blockly/reference/ios/../Classes/FieldImageLayout.html
+    - title: FieldImageView
+      path: /blockly/reference/ios/../Classes/FieldImageView.html
+    - title: FieldInput
+      path: /blockly/reference/ios/../Classes/FieldInput.html
+    - title: FieldInputLayout
+      path: /blockly/reference/ios/../Classes/FieldInputLayout.html
+    - title: FieldInputView
+      path: /blockly/reference/ios/../Classes/FieldInputView.html
+    - title: FieldLabel
+      path: /blockly/reference/ios/../Classes/FieldLabel.html
+    - title: FieldLabelLayout
+      path: /blockly/reference/ios/../Classes/FieldLabelLayout.html
+    - title: FieldLabelView
+      path: /blockly/reference/ios/../Classes/FieldLabelView.html
+    - title: FieldLayout
+      path: /blockly/reference/ios/../Classes/FieldLayout.html
+    - title: FieldLayoutMeasurer
+      path: /blockly/reference/ios/../Protocols/FieldLayoutMeasurer.html
+    - title: FieldListener
+      path: /blockly/reference/ios/../Protocols/FieldListener.html
+    - title: FieldNumber
+      path: /blockly/reference/ios/../Classes/FieldNumber.html
+    - title: FieldNumberLayout
+      path: /blockly/reference/ios/../Classes/FieldNumberLayout.html
+    - title: FieldNumberView
+      path: /blockly/reference/ios/../Classes/FieldNumberView.html
+    - title: FieldVariable
+      path: /blockly/reference/ios/../Classes/FieldVariable.html
+    - title: FieldVariableLayout
+      path: /blockly/reference/ios/../Classes/FieldVariableLayout.html
+    - title: FieldVariableView
+      path: /blockly/reference/ios/../Classes/FieldVariableView.html
+    - title: FieldView
+      path: /blockly/reference/ios/../Classes/FieldView.html
+    - title: ImageLoader
+      path: /blockly/reference/ios/../Classes/ImageLoader.html
+    - title: Input
+      path: /blockly/reference/ios/../Classes/Input.html
+    - title: – InputType
+      path: /blockly/reference/ios/../Classes/Input/InputType.html
+    - title: – Alignment
+      path: /blockly/reference/ios/../Classes/Input/Alignment.html
+    - title: InputBuilder
+      path: /blockly/reference/ios/../Classes/InputBuilder.html
+    - title: InputLayout
+      path: /blockly/reference/ios/../Classes/InputLayout.html
+    - title: InputView
+      path: /blockly/reference/ios/../Classes/InputView.html
+    - title: InsetTextField
+      path: /blockly/reference/ios/../Classes/InsetTextField.html
+    - title: JSONHelper
+      path: /blockly/reference/ios/../Classes/JSONHelper.html
+    - title: Layout
+      path: /blockly/reference/ios/../Classes/Layout.html
+    - title: LayoutBuilder
+      path: /blockly/reference/ios/../Classes/LayoutBuilder.html
+    - title: LayoutConfig
+      path: /blockly/reference/ios/../Classes/LayoutConfig.html
+    - title: LayoutDelegate
+      path: /blockly/reference/ios/../Protocols/LayoutDelegate.html
+    - title: LayoutEngine
+      path: /blockly/reference/ios/../Classes/LayoutEngine.html
+    - title: LayoutFactory
+      path: /blockly/reference/ios/../Classes/LayoutFactory.html
+    - title: LayoutFlag
+      path: /blockly/reference/ios/../Structs/LayoutFlag.html
+    - title: LayoutHierarchyListener
+      path: /blockly/reference/ios/../Protocols/LayoutHierarchyListener.html
+    - title: LayoutPopoverDelegate
+      path: /blockly/reference/ios/../Protocols/LayoutPopoverDelegate.html
+    - title: LayoutView
+      path: /blockly/reference/ios/../Classes/LayoutView.html
+    - title: MessageManager
+      path: /blockly/reference/ios/../Classes/MessageManager.html
+    - title: Mutator
+      path: /blockly/reference/ios/../Protocols/Mutator.html
+    - title: MutatorHelper
+      path: /blockly/reference/ios/../Classes/MutatorHelper.html
+    - title: MutatorIfElse
+      path: /blockly/reference/ios/../Classes/MutatorIfElse.html
+    - title: MutatorIfElseLayout
+      path: /blockly/reference/ios/../Classes/MutatorIfElseLayout.html
+    - title: MutatorIfElseView
+      path: /blockly/reference/ios/../Classes/MutatorIfElseView.html
+    - title: MutatorLayout
+      path: /blockly/reference/ios/../Classes/MutatorLayout.html
+    - title: MutatorProcedureCaller
+      path: /blockly/reference/ios/../Classes/MutatorProcedureCaller.html
+    - title: MutatorProcedureCallerLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureCallerLayout.html
+    - title: MutatorProcedureDefinition
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinition.html
+    - title: MutatorProcedureDefinitionLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinitionLayout.html
+    - title: MutatorProcedureDefinitionView
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinitionView.html
+    - title: MutatorProcedureIfReturn
+      path: /blockly/reference/ios/../Classes/MutatorProcedureIfReturn.html
+    - title: MutatorProcedureIfReturnLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureIfReturnLayout.html
+    - title: PathHelper
+      path: /blockly/reference/ios/../Classes/PathHelper.html
+    - title: – Corner
+      path: /blockly/reference/ios/../Classes/PathHelper/Corner.html
+    - title: ProcedureCoordinator
+      path: /blockly/reference/ios/../Classes/ProcedureCoordinator.html
+    - title: ProcedureParameter
+      path: /blockly/reference/ios/../Structs/ProcedureParameter.html
+    - title: NameManager
+      path: /blockly/reference/ios/../Classes/NameManager.html
+    - title: NameManagerListener
+      path: /blockly/reference/ios/../Protocols/NameManagerListener.html
+    - title: NumberPad
+      path: /blockly/reference/ios/../Classes/NumberPad.html
+    - title: – Options
+      path: /blockly/reference/ios/../Classes/NumberPad/Options.html
+    - title: NumberPadDelegate
+      path: /blockly/reference/ios/../Protocols/NumberPadDelegate.html
+    - title: NumberPadTextField
+      path: /blockly/reference/ios/../iOS.html#/c:@M@Blockly@objc(cs)NumberPadTextField
+    - title: NumberPadViewController
+      path: /blockly/reference/ios/../Classes/NumberPadViewController.html
+    - title: ObjectPool
+      path: /blockly/reference/ios/../Classes/ObjectPool.html
+    - title: Recyclable
+      path: /blockly/reference/ios/../Protocols/Recyclable.html
+    - title: String
+      path: /blockly/reference/ios/../Extensions/String.html
+    - title: Toolbox
+      path: /blockly/reference/ios/../Classes/Toolbox.html
+    - title: – Category
+      path: /blockly/reference/ios/../Classes/Toolbox/Category.html
+    - title: ToolboxCategoryListViewController
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryListViewController.html
+    - title: – Orientation
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryListViewController.html#/s:7Blockly33ToolboxCategoryListViewControllerC11OrientationO
+    - title: ToolboxCategoryListViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/ToolboxCategoryListViewControllerDelegate.html
+    - title: ToolboxCategoryViewController
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryViewController.html
+    - title: ToolboxLayout
+      path: /blockly/reference/ios/../Classes/ToolboxLayout.html
+    - title: TrashCanView
+      path: /blockly/reference/ios/../Classes/TrashCanView.html
+    - title: TrashCanViewController
+      path: /blockly/reference/ios/../Classes/TrashCanViewController.html
+    - title: ViewBuilder
+      path: /blockly/reference/ios/../Classes/ViewBuilder.html
+    - title: ViewBuilderDelegate
+      path: /blockly/reference/ios/../Protocols/ViewBuilderDelegate.html
+    - title: ViewFactory
+      path: /blockly/reference/ios/../Classes/ViewFactory.html
+    - title: ViewManager
+      path: /blockly/reference/ios/../Classes/ViewManager.html
+    - title: WeakSet
+      path: /blockly/reference/ios/../Structs/WeakSet.html
+    - title: WorkbenchViewController
+      path: /blockly/reference/ios/../Classes/WorkbenchViewController.html
+    - title: – Style
+      path: /blockly/reference/ios/../Classes/WorkbenchViewController.html#/s:7Blockly23WorkbenchViewControllerC5StyleO
+    - title: WorkbenchViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/WorkbenchViewControllerDelegate.html
+    - title: Workspace
+      path: /blockly/reference/ios/../Classes/Workspace.html
+    - title: WorkspaceBezierPath
+      path: /blockly/reference/ios/../Classes/WorkspaceBezierPath.html
+    - title: WorkspaceEdgeInsets
+      path: /blockly/reference/ios/../iOS.html#/s:7Blockly19WorkspaceEdgeInsetsa
+    - title: WorkspaceFlow
+      path: /blockly/reference/ios/../Classes/WorkspaceFlow.html
+    - title: – Item
+      path: /blockly/reference/ios/../Classes/WorkspaceFlow/Item.html
+    - title: WorkspaceFlowLayout
+      path: /blockly/reference/ios/../Classes/WorkspaceFlowLayout.html
+    - title: – LayoutDirection
+      path: /blockly/reference/ios/../Classes/WorkspaceFlowLayout.html#/s:7Blockly19WorkspaceFlowLayoutC0D9DirectionO
+    - title: WorkspaceLayout
+      path: /blockly/reference/ios/../Classes/WorkspaceLayout.html
+    - title: WorkspaceLayoutCoordinator
+      path: /blockly/reference/ios/../Classes/WorkspaceLayoutCoordinator.html
+    - title: WorkspaceListener
+      path: /blockly/reference/ios/../Protocols/WorkspaceListener.html
+    - title: WorkspacePoint
+      path: /blockly/reference/ios/../Extensions/WorkspacePoint.html
+    - title: WorkspaceSize
+      path: /blockly/reference/ios/../Extensions/WorkspaceSize.html
+    - title: WorkspaceView
+      path: /blockly/reference/ios/../Classes/WorkspaceView.html
+    - title: – Location
+      path: /blockly/reference/ios/../Classes/WorkspaceView/Location.html
+    - title: – ScrollView
+      path: /blockly/reference/ios/../Classes/WorkspaceView/ScrollView.html
+    - title: WorkspaceViewController
+      path: /blockly/reference/ios/../Classes/WorkspaceViewController.html
+    - title: WorkspaceViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/WorkspaceViewControllerDelegate.html
+    - title: ZIndexedGroupView
+      path: /blockly/reference/ios/../Classes/ZIndexedGroupView.html
+    - title: ZIndexedView
+      path: /blockly/reference/ios/../Protocols/ZIndexedView.html

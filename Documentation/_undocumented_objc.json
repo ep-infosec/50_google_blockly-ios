@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYEdgeInsets.h",
+      "line": 29,
+      "symbol": "BKYEdgeInsets",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYLayoutConfigStructs.h",
+      "line": 31,
+      "symbol": "BKYLayoutConfigUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYLayoutConfigStructs.h",
+      "line": 54,
+      "symbol": "BKYLayoutConfigSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYLayoutConfigStructs.h",
+      "line": 79,
+      "symbol": "BKYLayoutConfigEdgeInsets",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYWorkspaceUnits.h",
+      "line": 27,
+      "symbol": "BKYWorkspacePoint",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/BKYWorkspaceUnits.h",
+      "line": 54,
+      "symbol": "BKYWorkspaceSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/Blockly.h",
+      "line": 20,
+      "symbol": "BlocklyVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vicng/Github/blockly/ios/Sources/ObjC/Blockly.h",
+      "line": 23,
+      "symbol": "BlocklyVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/vicng/Github/blockly/ios/Samples/BlocklySample"
+}

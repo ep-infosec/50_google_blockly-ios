@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html devsite>
+  <head>
+    <title>Blockly Framework Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <meta charset='utf-8'>
+    <meta name="project_path" value="/blockly/_project.yaml"/><meta name="book_path" value="/blockly/_book.yaml"/>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BlockLayout</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objcMembers</span> <span class="n">open</span> <span class="kd">class</span> <span class="kt">BlockLayout</span><span class="p">:</span> <span class="kt"><a href="../Classes/Layout.html">Layout</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Abstract class for storing information on how to render and position a <code><a href="../Classes/Block.html">Block</a></code> on-screen.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Static Properties" class="dashAnchor"></a>
+                <a href="#/Static%20Properties">
+                  <h2 class="section-name">Static Properties</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly11BlockLayoutC20Flag_UpdateHighlightAA0cD0VvZ"></a>
+                    <a name="//apple_ref/swift/Variable/Flag_UpdateHighlight" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly11BlockLayoutC20Flag_UpdateHighlightAA0cD0VvZ">Flag_UpdateHighlight</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag that should be used when <code>self.highlighted</code> has been updated</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Flag_UpdateHighlight</span> <span class="o">=</span> <span class="kt"><a href="../Structs/LayoutFlag.html">LayoutFlag</a></span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly11BlockLayoutC18Flag_UpdateVisibleAA0cD0VvZ"></a>
+                    <a name="//apple_ref/swift/Variable/Flag_UpdateVisible" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly11BlockLayoutC18Flag_UpdateVisibleAA0cD0VvZ">Flag_UpdateVisible</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag that should be used when <code>self.visible</code> has been updated</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Flag_UpdateVisible</span> <span class="o">=</span> <span class="kt"><a href="../Structs/LayoutFlag.html">LayoutFlag</a></span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Blockly11BlockLayoutC30Flag_UpdateConnectionHighlightAA0cD0VvZ"></a>
+                    <a name="//apple_ref/swift/Variable/Flag_UpdateConnectionHighlight" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/s:7Blockly11BlockLayoutC30Flag_UpdateConnectionHighlightAA0cD0VvZ">Flag_UpdateConnectionHighlight</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag that should be used when any direct connection on this block has updated its highlight
+value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Flag_UpdateConnectionHighlight</span> <span class="o">=</span> <span class="kt"><a href="../Structs/LayoutFlag.html">LayoutFlag</a></span><span class="p">(</span><span class="mi">2</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h2 class="section-name">Properties</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)block"></a>
+                    <a name="//apple_ref/swift/Property/block" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)block">block</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Classes/Block.html">Block</a></code> to layout.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="k">let</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/Block.html">Block</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)inputLayouts"></a>
+                    <a name="//apple_ref/swift/Property/inputLayouts" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)inputLayouts">inputLayouts</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The corresponding layout objects for <code>self.block.inputs[]</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="nf">fileprivate</span><span class="p">(</span><span class="k">set</span><span class="p">)</span> <span class="k">var</span> <span class="nv">inputLayouts</span> <span class="o">=</span> <span class="p">[</span><span class="kt"><a href="../Classes/InputLayout.html">InputLayout</a></span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)mutatorLayout"></a>
+                    <a name="//apple_ref/swift/Property/mutatorLayout" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)mutatorLayout">mutatorLayout</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The corresponding layout object for <code>self.block.mutator</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">mutatorLayout</span><span class="p">:</span> <span class="kt"><a href="../Classes/MutatorLayout.html">MutatorLayout</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)fieldLayouts"></a>
+                    <a name="//apple_ref/swift/Property/fieldLayouts" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)fieldLayouts">fieldLayouts</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A list of all <code><a href="../Classes/FieldLayout.html">FieldLayout</a></code> objects belonging under this <code>BlockLayout</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">fieldLayouts</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/FieldLayout.html">FieldLayout</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)parentBlockGroupLayout"></a>
+                    <a name="//apple_ref/swift/Property/parentBlockGroupLayout" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)parentBlockGroupLayout">parentBlockGroupLayout</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parent block group layout</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">parentBlockGroupLayout</span><span class="p">:</span> <span class="kt"><a href="../Classes/BlockGroupLayout.html">BlockGroupLayout</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)rootBlockGroupLayout"></a>
+                    <a name="//apple_ref/swift/Property/rootBlockGroupLayout" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)rootBlockGroupLayout">rootBlockGroupLayout</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The top most block group layout for this block</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">rootBlockGroupLayout</span><span class="p">:</span> <span class="kt"><a href="../Classes/BlockGroupLayout.html">BlockGroupLayout</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)draggableBlockLayout"></a>
+                    <a name="//apple_ref/swift/Property/draggableBlockLayout" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)draggableBlockLayout">draggableBlockLayout</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The first draggable <code>BlockLayout</code> up the layout tree.
+If there is no <code>BlockLayout</code> exists up the layout tree, this value is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">draggableBlockLayout</span><span class="p">:</span> <span class="kt">BlockLayout</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)highlighted"></a>
+                    <a name="//apple_ref/swift/Property/highlighted" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)highlighted">highlighted</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag if this block should be highlighted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">highlighted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)visible"></a>
+                    <a name="//apple_ref/swift/Property/visible" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)visible">visible</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag indicating if this block should be visible</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">visible</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)userInteractionEnabled"></a>
+                    <a name="//apple_ref/swift/Property/userInteractionEnabled" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)userInteractionEnabled">userInteractionEnabled</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag determining if user interaction should be enabled for the corresponding view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">userInteractionEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)leadingEdgeXOffset"></a>
+                    <a name="//apple_ref/swift/Property/leadingEdgeXOffset" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)leadingEdgeXOffset">leadingEdgeXOffset</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The position of the block&rsquo;s leading edge X offset, specified as a Workspace coordinate
+system unit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">leadingEdgeXOffset</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)firstLineHeight"></a>
+                    <a name="//apple_ref/swift/Property/firstLineHeight" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)firstLineHeight">firstLineHeight</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The line height of the first line in the block layout, specified as a Workspace coordinate
+system unit. It is used for vertical alignment purposes and should be updated during
+<code>performLayout(includeChildren:)</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">firstLineHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)disabled"></a>
+                    <a name="//apple_ref/swift/Property/disabled" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)disabled">disabled</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag indicating if this block is disabled, which means it will be excluded from code
+generation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">disabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)inputsInline"></a>
+                    <a name="//apple_ref/swift/Property/inputsInline" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)inputsInline">inputsInline</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag indicating if input connectors should be drawn inside a block (<code>true</code>) or
+on the edge of the block (<code>false</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">inputsInline</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(py)comment"></a>
+                    <a name="//apple_ref/swift/Property/comment" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(py)comment">comment</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The comment text of the block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h2 class="section-name">Initializers</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)initWithBlock:engine:"></a>
+                    <a name="//apple_ref/swift/Method/init(block:engine:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)initWithBlock:engine:">init(block:engine:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the block layout.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/Block.html">Block</a></span><span class="p">,</span> <span class="nv">engine</span><span class="p">:</span> <span class="kt"><a href="../Classes/LayoutEngine.html">LayoutEngine</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Input%20Layouts"></a>
+                <a name="//apple_ref/swift/Section/Input Layouts" class="dashAnchor"></a>
+                <a href="#/Input%20Layouts">
+                  <h2 class="section-name">Input Layouts</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)appendInputLayout:"></a>
+                    <a name="//apple_ref/swift/Method/appendInputLayout(_:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)appendInputLayout:">appendInputLayout(_:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends an inputLayout to <code>self.inputLayouts</code> and sets its <code>parentLayout</code> to this instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">appendInputLayout</span><span class="p">(</span><span class="n">_</span> <span class="nv">inputLayout</span><span class="p">:</span> <span class="kt"><a href="../Classes/InputLayout.html">InputLayout</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)removeInputLayoutAtIndex:"></a>
+                    <a name="//apple_ref/swift/Method/removeInputLayout(atIndex:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)removeInputLayoutAtIndex:">removeInputLayout(atIndex:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes <code>self.inputLayouts[index]</code>, sets its <code>parentLayout</code> to nil, and returns it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">removeInputLayout</span><span class="p">(</span><span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/InputLayout.html">InputLayout</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>BlockLayout</code> that was removed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)resetWithUpdateLayout:"></a>
+                    <a name="//apple_ref/swift/Method/reset(updateLayout:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)resetWithUpdateLayout:">reset(updateLayout:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clears <code>self.inputLayouts</code> and <code>self.mutatorLayout</code>, and sets their <code>parentLayout</code> to nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">(</span><span class="nv">updateLayout</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Connection%20Highlighting"></a>
+                <a name="//apple_ref/swift/Section/Connection Highlighting" class="dashAnchor"></a>
+                <a href="#/Connection%20Highlighting">
+                  <h2 class="section-name">Connection Highlighting</h2>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)addHighlightSourceWithSourceUUID:forConnection:"></a>
+                    <a name="//apple_ref/swift/Method/addHighlightSource(sourceUUID:forConnection:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)addHighlightSourceWithSourceUUID:forConnection:">addHighlightSource(sourceUUID:forConnection:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a highlight source to a given connection on this block.</p>
+
+<p>If there were no previous highlight sources for this connection, a <code><a href="../Classes/BlockLayout.html#/s:7Blockly11BlockLayoutC20Flag_UpdateHighlightAA0cD0VvZ">Flag_UpdateHighlight</a></code>
+change event is triggered in order to update connection highlighting for this block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addHighlightSource</span><span class="p">(</span><span class="nv">sourceUUID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">forConnection</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt"><a href="../Classes/Connection.html">Connection</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)removeHighlightSourceWithSourceUUID:forConnection:"></a>
+                    <a name="//apple_ref/swift/Method/removeHighlightSource(sourceUUID:forConnection:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)removeHighlightSourceWithSourceUUID:forConnection:">removeHighlightSource(sourceUUID:forConnection:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a highlight source from a given connection on this block.</p>
+
+<p>If there are no more highlight sources for the given connection (after this one is removed), a
+<code><a href="../Classes/BlockLayout.html#/s:7Blockly11BlockLayoutC20Flag_UpdateHighlightAA0cD0VvZ">Flag_UpdateHighlight</a></code> change event is triggered in order to update connection highlighting for
+this block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeHighlightSource</span><span class="p">(</span><span class="nv">sourceUUID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">forConnection</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt"><a href="../Classes/Connection.html">Connection</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)isConnectionHighlighted:"></a>
+                    <a name="//apple_ref/swift/Method/isConnectionHighlighted(_:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)isConnectionHighlighted:">isConnectionHighlighted(_:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns if a connection is highlighted on this block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isConnectionHighlighted</span><span class="p">(</span><span class="n">_</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt"><a href="../Classes/Connection.html">Connection</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the connection has at least one highlight source. <code>false</code> otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(cs)BKYBlockLayout(im)hasHighlightedConnections"></a>
+                    <a name="//apple_ref/swift/Method/hasHighlightedConnections()" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(cs)BKYBlockLayout(im)hasHighlightedConnections">hasHighlightedConnections()</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns if there are connections that have been highlighted on this block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hasHighlightedConnections</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if any connections have been highlighted on this block. <code>false</code>
+otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Blockly@objc(pl)BKYBlockListener(im)didUpdateBlock:"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateBlock(_:)" class="dashAnchor"></a>
+                    <h3><a class="token" href="#/c:@M@Blockly@objc(pl)BKYBlockListener(im)didUpdateBlock:">didUpdateBlock(_:)</a></h3>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="objc">
+                          <p class="aside-title-objc">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didUpdateBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/Block.html">Block</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>          </section>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
+toc:
+- heading: Blockly
+
+- title: iOS
+  path: /blockly/reference/ios/../iOS
+  section:
+    - title: AnglePicker
+      path: /blockly/reference/ios/../Classes/AnglePicker.html
+    - title: – Options
+      path: /blockly/reference/ios/../Classes/AnglePicker/Options.html
+    - title: AnglePickerViewController
+      path: /blockly/reference/ios/../Classes/AnglePickerViewController.html
+    - title: AnglePickerViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/AnglePickerViewControllerDelegate.html
+    - title: Array
+      path: /blockly/reference/ios/../Extensions/Array.html
+    - title: BezierPathLayer
+      path: /blockly/reference/ios/../Classes/BezierPathLayer.html
+    - title: Block
+      path: /blockly/reference/ios/../Classes/Block.html
+    - title: – Style
+      path: /blockly/reference/ios/../Classes/Block/Style.html
+    - title: BlockBuilder
+      path: /blockly/reference/ios/../Classes/BlockBuilder.html
+    - title: BlockBumper
+      path: /blockly/reference/ios/../Classes/BlockBumper.html
+    - title: BlockExtension
+      path: /blockly/reference/ios/../Protocols/BlockExtension.html
+    - title: BlockExtensionClosure
+      path: /blockly/reference/ios/../Classes/BlockExtensionClosure.html
+    - title: BlocklyEvent
+      path: /blockly/reference/ios/../Classes/BlocklyEvent.html
+    - title: – Change
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Change.html
+    - title: – Delete
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Delete.html
+    - title: – UI
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/UI.html
+    - title: – Create
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Create.html
+    - title: – Move
+      path: /blockly/reference/ios/../Classes/BlocklyEvent/Move.html
+    - title: BlocklyEventFactory
+      path: /blockly/reference/ios/../Classes/BlocklyEventFactory.html
+    - title: BlockFactory
+      path: /blockly/reference/ios/../Classes/BlockFactory.html
+    - title: BlockGroupLayout
+      path: /blockly/reference/ios/../Classes/BlockGroupLayout.html
+    - title: BlockGroupView
+      path: /blockly/reference/ios/../Classes/BlockGroupView.html
+    - title: BlockJSONFile
+      path: /blockly/reference/ios/../Extensions/BlockJSONFile.html
+    - title: BlockLayout
+      path: /blockly/reference/ios/../Classes/BlockLayout.html
+    - title: BlockListener
+      path: /blockly/reference/ios/../Protocols/BlockListener.html
+    - title: BlocklyError
+      path: /blockly/reference/ios/../Classes/BlocklyError.html
+    - title: – Code
+      path: /blockly/reference/ios/../Classes/BlocklyError.html#/s:7Blockly0A5ErrorC4CodeO
+    - title: BlocklyPanGestureRecognizer
+      path: /blockly/reference/ios/../Classes/BlocklyPanGestureRecognizer.html
+    - title: – TouchState
+      path: /blockly/reference/ios/../Classes/BlocklyPanGestureRecognizer.html#/s:7Blockly0A20PanGestureRecognizerC10TouchStateO
+    - title: BlocklyPanGestureRecognizerDelegate
+      path: /blockly/reference/ios/../Protocols/BlocklyPanGestureRecognizerDelegate.html
+    - title: BlockView
+      path: /blockly/reference/ios/../Classes/BlockView.html
+    - title: BundledFile
+      path: /blockly/reference/ios/../iOS.html#/s:7Blockly11BundledFilea
+    - title: CodeGenerator
+      path: /blockly/reference/ios/../Classes/CodeGenerator.html
+    - title: – State
+      path: /blockly/reference/ios/../Classes/CodeGenerator.html#/s:7Blockly13CodeGeneratorC5StateO
+    - title: CodeGeneratorService
+      path: /blockly/reference/ios/../Classes/CodeGeneratorService.html
+    - title: CodeGeneratorServiceRequestBuilder
+      path: /blockly/reference/ios/../Classes/CodeGeneratorServiceRequestBuilder.html
+    - title: ColorHelper
+      path: /blockly/reference/ios/../Classes/ColorHelper.html
+    - title: ColorPalette
+      path: /blockly/reference/ios/../Classes/ColorPalette.html
+    - title: Connection
+      path: /blockly/reference/ios/../Classes/Connection.html
+    - title: – ConnectionType
+      path: /blockly/reference/ios/../Classes/Connection.html#/s:7Blockly10ConnectionC0B4TypeO
+    - title: – CheckResult
+      path: /blockly/reference/ios/../Classes/Connection/CheckResult.html
+    - title: ConnectionManager
+      path: /blockly/reference/ios/../Classes/ConnectionManager.html
+    - title: – Group
+      path: /blockly/reference/ios/../Classes/ConnectionManager/Group.html
+    - title: ConnectionPositionDelegate
+      path: /blockly/reference/ios/../Protocols/ConnectionPositionDelegate.html
+    - title: ConnectionValidator
+      path: /blockly/reference/ios/../Protocols/ConnectionValidator.html
+    - title: DefaultBlockGroupLayout
+      path: /blockly/reference/ios/../Classes/DefaultBlockGroupLayout.html
+    - title: DefaultBlockLayout
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout.html
+    - title: – Background
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/Background.html
+    - title: – BackgroundRow
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/BackgroundRow.html
+    - title: – InlineConnector
+      path: /blockly/reference/ios/../Classes/DefaultBlockLayout/InlineConnector.html
+    - title: DefaultBlockView
+      path: /blockly/reference/ios/../Classes/DefaultBlockView.html
+    - title: DefaultConnectionValidator
+      path: /blockly/reference/ios/../Classes/DefaultConnectionValidator.html
+    - title: DefaultInputLayout
+      path: /blockly/reference/ios/../Classes/DefaultInputLayout.html
+    - title: DefaultLayoutConfig
+      path: /blockly/reference/ios/../Classes/DefaultLayoutConfig.html
+    - title: DefaultLayoutEngine
+      path: /blockly/reference/ios/../Classes/DefaultLayoutEngine.html
+    - title: Dictionary
+      path: /blockly/reference/ios/../Extensions/Dictionary.html
+    - title: Dragger
+      path: /blockly/reference/ios/../Classes/Dragger.html
+    - title: DropdownOptionsViewController
+      path: /blockly/reference/ios/../Classes/DropdownOptionsViewController.html
+    - title: DropdownOptionsViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/DropdownOptionsViewControllerDelegate.html
+    - title: DropdownView
+      path: /blockly/reference/ios/../Classes/DropdownView.html
+    - title: DropdownViewDelegate
+      path: /blockly/reference/ios/../Protocols/DropdownViewDelegate.html
+    - title: EdgeInsets
+      path: /blockly/reference/ios/../Extensions/EdgeInsets.html
+    - title: EventManager
+      path: /blockly/reference/ios/../Classes/EventManager.html
+    - title: EventManagerListener
+      path: /blockly/reference/ios/../Protocols/EventManagerListener.html
+    - title: Field
+      path: /blockly/reference/ios/../Classes/Field.html
+    - title: – JSONRegistry
+      path: /blockly/reference/ios/../Classes/Field/JSONRegistry.html
+    - title: FieldAngle
+      path: /blockly/reference/ios/../Classes/FieldAngle.html
+    - title: FieldAngleLayout
+      path: /blockly/reference/ios/../Classes/FieldAngleLayout.html
+    - title: FieldAngleView
+      path: /blockly/reference/ios/../Classes/FieldAngleView.html
+    - title: FieldCheckbox
+      path: /blockly/reference/ios/../Classes/FieldCheckbox.html
+    - title: FieldCheckboxLayout
+      path: /blockly/reference/ios/../Classes/FieldCheckboxLayout.html
+    - title: FieldCheckboxView
+      path: /blockly/reference/ios/../Classes/FieldCheckboxView.html
+    - title: FieldColor
+      path: /blockly/reference/ios/../Classes/FieldColor.html
+    - title: FieldColorLayout
+      path: /blockly/reference/ios/../Classes/FieldColorLayout.html
+    - title: FieldColorPickerViewController
+      path: /blockly/reference/ios/../Classes/FieldColorPickerViewController.html
+    - title: FieldColorPickerViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/FieldColorPickerViewControllerDelegate.html
+    - title: FieldColorView
+      path: /blockly/reference/ios/../Classes/FieldColorView.html
+    - title: FieldDate
+      path: /blockly/reference/ios/../Classes/FieldDate.html
+    - title: FieldDateLayout
+      path: /blockly/reference/ios/../Classes/FieldDateLayout.html
+    - title: FieldDateView
+      path: /blockly/reference/ios/../Classes/FieldDateView.html
+    - title: FieldDropdown
+      path: /blockly/reference/ios/../Classes/FieldDropdown.html
+    - title: FieldDropdownLayout
+      path: /blockly/reference/ios/../Classes/FieldDropdownLayout.html
+    - title: FieldDropdownView
+      path: /blockly/reference/ios/../Classes/FieldDropdownView.html
+    - title: FieldImage
+      path: /blockly/reference/ios/../Classes/FieldImage.html
+    - title: FieldImageLayout
+      path: /blockly/reference/ios/../Classes/FieldImageLayout.html
+    - title: FieldImageView
+      path: /blockly/reference/ios/../Classes/FieldImageView.html
+    - title: FieldInput
+      path: /blockly/reference/ios/../Classes/FieldInput.html
+    - title: FieldInputLayout
+      path: /blockly/reference/ios/../Classes/FieldInputLayout.html
+    - title: FieldInputView
+      path: /blockly/reference/ios/../Classes/FieldInputView.html
+    - title: FieldLabel
+      path: /blockly/reference/ios/../Classes/FieldLabel.html
+    - title: FieldLabelLayout
+      path: /blockly/reference/ios/../Classes/FieldLabelLayout.html
+    - title: FieldLabelView
+      path: /blockly/reference/ios/../Classes/FieldLabelView.html
+    - title: FieldLayout
+      path: /blockly/reference/ios/../Classes/FieldLayout.html
+    - title: FieldLayoutMeasurer
+      path: /blockly/reference/ios/../Protocols/FieldLayoutMeasurer.html
+    - title: FieldListener
+      path: /blockly/reference/ios/../Protocols/FieldListener.html
+    - title: FieldNumber
+      path: /blockly/reference/ios/../Classes/FieldNumber.html
+    - title: FieldNumberLayout
+      path: /blockly/reference/ios/../Classes/FieldNumberLayout.html
+    - title: FieldNumberView
+      path: /blockly/reference/ios/../Classes/FieldNumberView.html
+    - title: FieldVariable
+      path: /blockly/reference/ios/../Classes/FieldVariable.html
+    - title: FieldVariableLayout
+      path: /blockly/reference/ios/../Classes/FieldVariableLayout.html
+    - title: FieldVariableView
+      path: /blockly/reference/ios/../Classes/FieldVariableView.html
+    - title: FieldView
+      path: /blockly/reference/ios/../Classes/FieldView.html
+    - title: ImageLoader
+      path: /blockly/reference/ios/../Classes/ImageLoader.html
+    - title: Input
+      path: /blockly/reference/ios/../Classes/Input.html
+    - title: – InputType
+      path: /blockly/reference/ios/../Classes/Input/InputType.html
+    - title: – Alignment
+      path: /blockly/reference/ios/../Classes/Input/Alignment.html
+    - title: InputBuilder
+      path: /blockly/reference/ios/../Classes/InputBuilder.html
+    - title: InputLayout
+      path: /blockly/reference/ios/../Classes/InputLayout.html
+    - title: InputView
+      path: /blockly/reference/ios/../Classes/InputView.html
+    - title: InsetTextField
+      path: /blockly/reference/ios/../Classes/InsetTextField.html
+    - title: JSONHelper
+      path: /blockly/reference/ios/../Classes/JSONHelper.html
+    - title: Layout
+      path: /blockly/reference/ios/../Classes/Layout.html
+    - title: LayoutBuilder
+      path: /blockly/reference/ios/../Classes/LayoutBuilder.html
+    - title: LayoutConfig
+      path: /blockly/reference/ios/../Classes/LayoutConfig.html
+    - title: LayoutDelegate
+      path: /blockly/reference/ios/../Protocols/LayoutDelegate.html
+    - title: LayoutEngine
+      path: /blockly/reference/ios/../Classes/LayoutEngine.html
+    - title: LayoutFactory
+      path: /blockly/reference/ios/../Classes/LayoutFactory.html
+    - title: LayoutFlag
+      path: /blockly/reference/ios/../Structs/LayoutFlag.html
+    - title: LayoutHierarchyListener
+      path: /blockly/reference/ios/../Protocols/LayoutHierarchyListener.html
+    - title: LayoutPopoverDelegate
+      path: /blockly/reference/ios/../Protocols/LayoutPopoverDelegate.html
+    - title: LayoutView
+      path: /blockly/reference/ios/../Classes/LayoutView.html
+    - title: MessageManager
+      path: /blockly/reference/ios/../Classes/MessageManager.html
+    - title: Mutator
+      path: /blockly/reference/ios/../Protocols/Mutator.html
+    - title: MutatorHelper
+      path: /blockly/reference/ios/../Classes/MutatorHelper.html
+    - title: MutatorIfElse
+      path: /blockly/reference/ios/../Classes/MutatorIfElse.html
+    - title: MutatorIfElseLayout
+      path: /blockly/reference/ios/../Classes/MutatorIfElseLayout.html
+    - title: MutatorIfElseView
+      path: /blockly/reference/ios/../Classes/MutatorIfElseView.html
+    - title: MutatorLayout
+      path: /blockly/reference/ios/../Classes/MutatorLayout.html
+    - title: MutatorProcedureCaller
+      path: /blockly/reference/ios/../Classes/MutatorProcedureCaller.html
+    - title: MutatorProcedureCallerLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureCallerLayout.html
+    - title: MutatorProcedureDefinition
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinition.html
+    - title: MutatorProcedureDefinitionLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinitionLayout.html
+    - title: MutatorProcedureDefinitionView
+      path: /blockly/reference/ios/../Classes/MutatorProcedureDefinitionView.html
+    - title: MutatorProcedureIfReturn
+      path: /blockly/reference/ios/../Classes/MutatorProcedureIfReturn.html
+    - title: MutatorProcedureIfReturnLayout
+      path: /blockly/reference/ios/../Classes/MutatorProcedureIfReturnLayout.html
+    - title: PathHelper
+      path: /blockly/reference/ios/../Classes/PathHelper.html
+    - title: – Corner
+      path: /blockly/reference/ios/../Classes/PathHelper/Corner.html
+    - title: ProcedureCoordinator
+      path: /blockly/reference/ios/../Classes/ProcedureCoordinator.html
+    - title: ProcedureParameter
+      path: /blockly/reference/ios/../Structs/ProcedureParameter.html
+    - title: NameManager
+      path: /blockly/reference/ios/../Classes/NameManager.html
+    - title: NameManagerListener
+      path: /blockly/reference/ios/../Protocols/NameManagerListener.html
+    - title: NumberPad
+      path: /blockly/reference/ios/../Classes/NumberPad.html
+    - title: – Options
+      path: /blockly/reference/ios/../Classes/NumberPad/Options.html
+    - title: NumberPadDelegate
+      path: /blockly/reference/ios/../Protocols/NumberPadDelegate.html
+    - title: NumberPadTextField
+      path: /blockly/reference/ios/../iOS.html#/c:@M@Blockly@objc(cs)NumberPadTextField
+    - title: NumberPadViewController
+      path: /blockly/reference/ios/../Classes/NumberPadViewController.html
+    - title: ObjectPool
+      path: /blockly/reference/ios/../Classes/ObjectPool.html
+    - title: Recyclable
+      path: /blockly/reference/ios/../Protocols/Recyclable.html
+    - title: String
+      path: /blockly/reference/ios/../Extensions/String.html
+    - title: Toolbox
+      path: /blockly/reference/ios/../Classes/Toolbox.html
+    - title: – Category
+      path: /blockly/reference/ios/../Classes/Toolbox/Category.html
+    - title: ToolboxCategoryListViewController
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryListViewController.html
+    - title: – Orientation
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryListViewController.html#/s:7Blockly33ToolboxCategoryListViewControllerC11OrientationO
+    - title: ToolboxCategoryListViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/ToolboxCategoryListViewControllerDelegate.html
+    - title: ToolboxCategoryViewController
+      path: /blockly/reference/ios/../Classes/ToolboxCategoryViewController.html
+    - title: ToolboxLayout
+      path: /blockly/reference/ios/../Classes/ToolboxLayout.html
+    - title: TrashCanView
+      path: /blockly/reference/ios/../Classes/TrashCanView.html
+    - title: TrashCanViewController
+      path: /blockly/reference/ios/../Classes/TrashCanViewController.html
+    - title: ViewBuilder
+      path: /blockly/reference/ios/../Classes/ViewBuilder.html
+    - title: ViewBuilderDelegate
+      path: /blockly/reference/ios/../Protocols/ViewBuilderDelegate.html
+    - title: ViewFactory
+      path: /blockly/reference/ios/../Classes/ViewFactory.html
+    - title: ViewManager
+      path: /blockly/reference/ios/../Classes/ViewManager.html
+    - title: WeakSet
+      path: /blockly/reference/ios/../Structs/WeakSet.html
+    - title: WorkbenchViewController
+      path: /blockly/reference/ios/../Classes/WorkbenchViewController.html
+    - title: – Style
+      path: /blockly/reference/ios/../Classes/WorkbenchViewController.html#/s:7Blockly23WorkbenchViewControllerC5StyleO
+    - title: WorkbenchViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/WorkbenchViewControllerDelegate.html
+    - title: Workspace
+      path: /blockly/reference/ios/../Classes/Workspace.html
+    - title: WorkspaceBezierPath
+      path: /blockly/reference/ios/../Classes/WorkspaceBezierPath.html
+    - title: WorkspaceEdgeInsets
+      path: /blockly/reference/ios/../iOS.html#/s:7Blockly19WorkspaceEdgeInsetsa
+    - title: WorkspaceFlow
+      path: /blockly/reference/ios/../Classes/WorkspaceFlow.html
+    - title: – Item
+      path: /blockly/reference/ios/../Classes/WorkspaceFlow/Item.html
+    - title: WorkspaceFlowLayout
+      path: /blockly/reference/ios/../Classes/WorkspaceFlowLayout.html
+    - title: – LayoutDirection
+      path: /blockly/reference/ios/../Classes/WorkspaceFlowLayout.html#/s:7Blockly19WorkspaceFlowLayoutC0D9DirectionO
+    - title: WorkspaceLayout
+      path: /blockly/reference/ios/../Classes/WorkspaceLayout.html
+    - title: WorkspaceLayoutCoordinator
+      path: /blockly/reference/ios/../Classes/WorkspaceLayoutCoordinator.html
+    - title: WorkspaceListener
+      path: /blockly/reference/ios/../Protocols/WorkspaceListener.html
+    - title: WorkspacePoint
+      path: /blockly/reference/ios/../Extensions/WorkspacePoint.html
+    - title: WorkspaceSize
+      path: /blockly/reference/ios/../Extensions/WorkspaceSize.html
+    - title: WorkspaceView
+      path: /blockly/reference/ios/../Classes/WorkspaceView.html
+    - title: – Location
+      path: /blockly/reference/ios/../Classes/WorkspaceView/Location.html
+    - title: – ScrollView
+      path: /blockly/reference/ios/../Classes/WorkspaceView/ScrollView.html
+    - title: WorkspaceViewController
+      path: /blockly/reference/ios/../Classes/WorkspaceViewController.html
+    - title: WorkspaceViewControllerDelegate
+      path: /blockly/reference/ios/../Protocols/WorkspaceViewControllerDelegate.html
+    - title: ZIndexedGroupView
+      path: /blockly/reference/ios/../Classes/ZIndexedGroupView.html
+    - title: ZIndexedView
+      path: /blockly/reference/ios/../Protocols/ZIndexedView.html
